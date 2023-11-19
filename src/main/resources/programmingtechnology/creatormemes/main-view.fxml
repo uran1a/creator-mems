@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="programmingtechnology.creatormemes.controllers.MainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="openMenuItem" mnemonicParsing="false" text="Open" />
+                  <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <BorderPane prefHeight="389.0" prefWidth="600.0">
+         <bottom>
+            <HBox prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="prevImageButton" mnemonicParsing="false" text="Prev" />
+                  <Button fx:id="createMemButton" mnemonicParsing="false" text="Create" />
+                  <Button fx:id="nextImageButton" mnemonicParsing="false" text="Next" />
+                  <TextField />
+                  <Button fx:id="addTextButton" mnemonicParsing="false" text="Add text" />
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <Label fx:id="pathFolderLabel" text="Label" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</VBox>
