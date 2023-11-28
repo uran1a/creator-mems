@@ -35,7 +35,7 @@ public class ConcreteAggregate implements Aggregate{
             return current;
         }
         private Image getImage(int i){
-            return new Image(images.get(i).toURI().toString(), 100.0, 100.0, true, true);
+            return new Image(images.get(i).toURI().toString());
         }
         @Override
         public boolean hasNext() {

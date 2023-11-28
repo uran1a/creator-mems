@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -25,13 +24,12 @@
       </MenuBar>
       <BorderPane prefHeight="389.0" prefWidth="600.0">
          <bottom>
-            <HBox prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="prevImageButton" mnemonicParsing="false" text="Prev" />
-                  <Button fx:id="createMemButton" mnemonicParsing="false" text="Create" />
-                  <Button fx:id="nextImageButton" mnemonicParsing="false" text="Next" />
-                  <TextField />
-                  <Button fx:id="addTextButton" mnemonicParsing="false" text="Add text" />
+                  <Button fx:id="prevImageButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Prev" />
+                  <Button fx:id="startMemeButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Start" />
+                  <Button fx:id="stopMemeButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Stop" />
+                  <Button fx:id="nextImageButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Next" />
                </children>
             </HBox>
          </bottom>
